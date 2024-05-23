@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exercicio DOM</h1>
+        <form>
+            <input id="numMaior" type="number" required placeholder="Digite um número:">
+            <input id="numMenor" oninput="validaForm()" type="number" required placeholder="Digite um número maior:">
+            <span class="message">O primeiro valor tem que ser menor que o segundo!</span>
+            <span class="message">O formulario está valido!</span>
+            <button disabled id="btn" type="submit">Verificar</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
